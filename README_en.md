@@ -4,7 +4,7 @@
 
 ![Header](README.assets/%E4%B8%BB%E5%9B%BE.png)
 
-An open-source desktop pet/shimeji/virtual pet app, that can be embedded into any Windows Presentation Framework app as well.
+An open-source virtual pet (desktop pet/shimeji) app, that can be embedded into any Windows Presentation Framework app as well.
 
 Get VPet [on Steam](https://store.steampowered.com/app/1920960/VPet) for free, or install its core library to your WPF app with [NuGet](https://www.nuget.org/packages/VPet-Simulator.Core).
 
@@ -155,11 +155,11 @@ You **must** inform users of the source of our animation files, and provide a li
 * You **must** provide a link to [this page](https://github.com/LorisYounger/VPet).
 * **No** profit should be made with our files.
 
-## How to deploy Vpet-Simulator.Windows
+## How to deploy VPet-Simulator.Windows
 
 1. Download the source code, and open `VPet.sln` with Visual Studio.
-2. Change the project to generate to `Vpet-Simulator.Windows`, and the configuration to `x64`.
+2. Change the project to generate to `VPet-Simulator.Windows`, and the configuration to `x64`.
    ![Demonstration of the above](README.assets/image-20230208004330895.png)
-3. Click on `Run`. If everything is OK, you will get the following message: `Lack Mod Core, Unable start desktop pet`
-4. Run `Vpet-Simulator.Windows/mklink.bat` as administrator. This links the `mod` folder to the build folder.
+3. Click on `Run`. If everything is OK, you will get the following message: `缺少模组Core,无法启动桌宠` (`Lack Mod Core, Unable start desktop pet`) <!-- Pretty sure VPet-Simulator.Windows can't even load localizations when Core is missing, correct me if I'm wrong. -->
+4. Run `VPet-Simulator.Windows/mklink.bat` as administrator. This links the `mod` folder to the build folder.
 5. Click on `Run` again, and this time the app will run.
